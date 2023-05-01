@@ -11,14 +11,10 @@ stories:
 
 - story: create image
   steps:
+  - intent: greet
+  - action: utter_greet
   - intent: query_image
-  - action: utter_image
-  - intent: affirm
-  - action: utter_prompt
-  - slot_was_set:
-    - prompt: null
-#  - action: action_create_image
-  - action: utter_create_image
+  - action: action_create_image
 
 - story: sad path 1
   steps:

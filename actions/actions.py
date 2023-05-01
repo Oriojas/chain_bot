@@ -29,7 +29,7 @@ class ActionCreateImage(Action):
         prompt = tracker.latest_message['text']
 
         openai.api_key = OPENAI_API_KEY
-        response = openai.Image.create(prompt=prompt,
+        response = openai.Image.create(prompt=prompt[14:],
                                        n=1,
                                        size="512x512")
 
@@ -39,5 +39,7 @@ class ActionCreateImage(Action):
 
         with open("img_create/img_response.jpg", 'wb') as handler:
             handler.write(img)
+
+        dispatcher.utter_message(text=f"{prompt[14:]} image in: /img_create/img_response.jpg")
 
         return []

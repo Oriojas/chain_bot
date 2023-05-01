@@ -13,6 +13,8 @@ intents:
 actions:
   - action_create_image
 
+entities: []
+
 slots:
   prompt:
     type: text
@@ -39,18 +41,6 @@ responses:
   utter_iamabot:
   - text: "I am a bot, powered by ChainLink Hackathon."
 
-  utter_image:
-  - text: "Do you want me to create for a image?"
-  - text: "Do you need me to create for a image?"
-  - text: "Would you like to create a image?"
-
-  utter_prompt:
-  - text: "Describe you image"
-  - text: "Enter the text"
-
-  utter_create_image:
-  - text: "you image in: "
-    image: "rasa img_create/img_response.jpg"
 
 session_config:
   session_expiration_time: 60
