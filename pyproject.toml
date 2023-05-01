@@ -2,7 +2,7 @@
 name = "chain-bot"
 version = "0.1.0"
 description = ""
-authors = ["oscar50 <oscar@whaleandjaguar.co>"]
+authors = ["Oriojas <oscarriojas@gmail.com>"]
 readme = "README.md"
 packages = [{include = "chain_bot"}]
 
