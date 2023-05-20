@@ -16,6 +16,8 @@ entities: []
 slots:
   prompt:
     type: text
+    mappings:
+      - type: from_entity
 
 responses:
   utter_greet:
