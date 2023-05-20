@@ -14,6 +14,9 @@ stories:
   - intent: greet
   - action: utter_greet
   - intent: query_image
+  - action: utter_create_img
+  - slot_was_set:
+    - prompt: create image dog
   - action: action_create_image
 
 - story: sad path 1

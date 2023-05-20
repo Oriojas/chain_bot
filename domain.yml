@@ -9,17 +9,13 @@ intents:
   - mood_unhappy
   - bot_challenge
   - query_image
-
-actions:
-  - action_create_image
+  - create_image:
+      use_entities: true
 
 entities: []
-
 slots:
   prompt:
     type: text
-    mappings:
-      - type: from_text
 
 responses:
   utter_greet:
@@ -41,7 +37,17 @@ responses:
   utter_iamabot:
   - text: "I am a bot, powered by ChainLink Hackathon."
 
+  utter_create_img:
+  - text: "Describe what image you want to create"
 
+actions:
+  - action_create_image
+
+forms: {}
+e2e_actions: []
+
+config:
+  store_entities_as_slots: true
 session_config:
   session_expiration_time: 60
-  carry_over_slots_to_new_session: true
+  carry_over_slots_to_new_session: false

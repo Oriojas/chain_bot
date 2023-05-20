@@ -98,3 +98,10 @@ nlu:
     - images from a text description
     - a picture from text
     - is possible create an image from text
+
+- intent: create_image
+  examples: |
+    - create a image the dog in the moon
+    - drawing a image the dog in the city
+    - sketch of two persons in the sea
+    - image of person swimming
