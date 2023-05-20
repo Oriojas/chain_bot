@@ -12,12 +12,11 @@ intents:
   - create_image:
       use_entities: true
 
-entities: []
 slots:
   prompt:
     type: text
     mappings:
-      - type: from_entity
+      - type: from_text
 
 responses:
   utter_greet:
@@ -45,11 +44,6 @@ responses:
 actions:
   - action_create_image
 
-forms: {}
-e2e_actions: []
-
-config:
-  store_entities_as_slots: true
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: false
