@@ -105,3 +105,120 @@ nlu:
     - drawing a image the dog in the city
     - sketch of two persons in the sea
     - image of person swimming
+    - Create an image of a cat.
+    - Create an image of a dog.
+    - Create an image of a house.
+    - Create an image of a tree.
+    - Create an image of a flower.
+    - Create an image of a beach.
+    - Create an image of a forest.
+    - Create an image of a city.
+    - Create an image of a mountain.
+    - Create an image of a desert.
+    - Create an image of a happy face.
+    - Create an image of a sad face.
+    - Create an image of an angry face.
+    - Create an image of a scared face.
+    - Create an image of a surprised face.
+    - Create an image in the style of a painting.
+    - Create an image in the style of a cartoon.
+    - Create an image in the style of a photograph.
+    - Create an image in the style of a comic book.
+    - Create an image in the style of a video game.
+    - Create an image that says "I love you."
+    - Create an image that says "Happy birthday."
+    - Create an image that says "Congratulations."
+    - Create an image that says "I'm sorry."
+    - Create an image that says "Thank you."
+
+- intent: wallet_balance
+  examples: |
+    - What is my balance?
+    - How much money do I have?
+    - What is my ETH balance?
+    - What is my BTC balance?
+    - What is my NFT balance?
+    - What tokens do I have?
+    - What is my token balance?
+    - How many tokens do I have?
+    - How much ETH do I have?
+    - What's my BTC balance?
+    - How much money do I have in my wallet?
+    - How much money do I have in my crypto wallet?
+    - What's my balance?
+    - What's my coin count?
+    - How much scratch do I have in my wallet?
+    - How much dough do I have in my crypto wallet?
+    - What's my balance, fam?
+    - give me my balance
+    - see my money
+    - see my crypto
+    - see my tokens
+    - How much USDT do I have?
+    - How much DAI do I have?
+    - How much USDC do I have?
+    - How much MATIC do I have?
+    - How much PEPE do I have?
+    - How many tokens do I have in my wallet?
+    - How many ERC-20 tokens do I have?
+    - Can you tell me how much is in my wallet?
+    - What's the balance of my address?
+    - How much money do I have in my Web3 wallet?
+
+- intent: send_tokens
+  examples: |
+    - I need to transfer 1 ETH to my friend's wallet
+    - Can you transfer 100 USDC to my colleague's wallet?
+    - Could you please transfer 1 BTC to my family member's wallet?
+    - I'd appreciate it if you could transfer 10 NFTs to my favorite charity.
+    - I need to move 1 ETH from my wallet to my friend's wallet
+    - Can you help me transfer 100 USDC to my colleague's wallet?
+    - Could you please move 1 BTC from my family member's wallet to my wallet?
+    - I'd appreciate it if you could transfer 10 NFTs from my wallet to my favorite charity's wallet
+    - I need to donate 1 ETH to my favorite artist
+    - I would like to send money to this wallet
+    - I want to give 1 ETH to my favorite artist
+    - I'd like to give 100 USDC to my favorite cause
+    - I need to give 1 BTC to my favorite charity
+    - I'd appreciate it if you could give 10 NFTs to my favorite community.
+    - Can you help me give 1 ETH to my favorite artist?
+    - Could you please give 100 USDC to my favorite cause?
+    - I'd like to donate 1 BTC to my favorite charity
+    - Could you please give 10 NFTs to my favorite community?
+    - I need to donate 1 ETH to my favorite artist
+    - I need to send money to this wallet.
+    - Can you help me send money to this wallet?
+    - Could you please send money to this wallet for me?
+    - I'd appreciate it if you could send money to this wallet.
+    - I need to transfer some money to this wallet.
+    - Can you help me transfer money to this wallet?
+    - Could you please transfer money to this wallet for me?
+    - I'd appreciate it if you could transfer money to this wallet.
+
+- intent: current_price
+  examples: |
+    - What is the current price of ETH?
+    - What is the current price of BTC?
+    - i want to know what is the current price for ETH
+    - What's BTC at right now?
+    - What's LINK at?
+    - What's the LINK going for?
+    - What's the Bitcoin price?
+    - What's the ETH situation?
+    - What's BTC doing right now?
+    - What's the LINK vibe?
+    - What's the Bitcoin price point?
+    - What's Ethereum's current value?
+    - What's FIL status?
+    - What's the Dogecoin price tag?
+    - What's the LINK rate?
+    - What's the MATIC cost?
+    - What's the BTC value?
+    - What's the LINK price?
+    - What's the DOT price point?
+    - What's the Ethereum price tag?
+    - What's the Polkadot rate?
+    - What's the Chainlink value?
+    - What's the Uniswap cost?
+    - What's the DOT price?
+    - What's the Shiba Inu price point?
