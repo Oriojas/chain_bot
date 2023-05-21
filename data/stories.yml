@@ -20,6 +20,17 @@ stories:
     - prompt: create an image of a cat
   - action: action_create_image
 
+- story: wallet_balance
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: wallet_balance
+    - action: utter_wallet_balance
+    - intent: token
+    - slot_was_set:
+        - token: ETH
+    - action: action_wallet_balance
+
 - story: sad path 1
   steps:
   - intent: greet

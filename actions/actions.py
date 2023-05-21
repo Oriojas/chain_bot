@@ -25,7 +25,6 @@ class ActionCreateImage(Action):
             dispatcher: CollectingDispatcher,
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-
         prompt = tracker.latest_message['text']
 
         openai.api_key = OPENAI_API_KEY
@@ -41,5 +40,21 @@ class ActionCreateImage(Action):
             handler.write(img)
 
         dispatcher.utter_message(text=f"{prompt[14:]} image in: /img_create/img_response.jpg")
+
+        return []
+
+
+class ActionWalletBalance(Action):
+
+    def name(self) -> Text:
+        return "action_wallet_balance"
+
+    def run(self,
+            dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        token = tracker.latest_message['text']
+
+        dispatcher.utter_message(text=f"You balance in {token} is 0.1")
 
         return []

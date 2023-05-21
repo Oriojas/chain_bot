@@ -131,13 +131,22 @@ nlu:
     - Create an image that says "I'm sorry."
     - Create an image that says "Thank you."
 
+- intent: token
+  examples: |
+    - BTC
+    - ETH
+    - USDC
+    - USDT
+    - XDAI
+    - LINK
+    - FIL
+    - PEPE
+    - SOL
+
 - intent: wallet_balance
   examples: |
     - What is my balance?
     - How much money do I have?
-    - What is my ETH balance?
-    - What is my BTC balance?
-    - What is my NFT balance?
     - What tokens do I have?
     - What is my token balance?
     - How many tokens do I have?
@@ -154,11 +163,6 @@ nlu:
     - see my money
     - see my crypto
     - see my tokens
-    - How much USDT do I have?
-    - How much DAI do I have?
-    - How much USDC do I have?
-    - How much MATIC do I have?
-    - How much PEPE do I have?
     - How many tokens do I have in my wallet?
     - How many ERC-20 tokens do I have?
     - Can you tell me how much is in my wallet?
