@@ -15,6 +15,7 @@ from rasa_sdk.executor import CollectingDispatcher
 
 OPENAI_API_KEY = os.environ["OPENAI_API_KEY"]
 STUARY_API_KEY = os.environ["STUARY_API_KEY"]
+FILE_IMG = os.environ["FILE_IMG"]
 
 
 class ActionCreateImage(Action):
@@ -35,27 +36,27 @@ class ActionCreateImage(Action):
 
         url_img = response.get("data")[0].get("url")
 
-        url = "https://upload.estuary.tech/content/add"
-
         img = requests.get(url_img).content
 
         with open("img_create/img_response.jpg", 'wb') as handler:
             handler.write(img)
+
+        url = "https://upload.estuary.tech/content/add"
 
         payload = {}
         headers = {'Accept': 'application/json',
                    'Authorization': f"Bearer {STUARY_API_KEY}"}
         files = [('data',
                   ('file',
-                   open('img_create/img_response.jpg', 'rb'),
+                   open(f'{FILE_IMG}/img_response.jpg', 'rb'),
                    'application/octet-stream'))]
 
         response = requests.request("POST", url, headers=headers, data=payload, files=files)
 
-        dispatcher.utter_message(text=f"{prompt[14:]} image in: /img_create/img_response.jpg")
-        dispatcher.utter_message(text=f"CID: {response}")
+        cid = eval(response.text).get("cid")
 
-        print(response)
+        dispatcher.utter_message(text=f"{prompt[14:]} image in: /img_create/img_response.jpg")
+        dispatcher.utter_message(text=f"CID: {cid}")
 
         return []
 

@@ -98,6 +98,8 @@ nlu:
     - images from a text description
     - a picture from text
     - is possible create an image from text
+    - can you create an image
+    - can you create an picture
 
 - intent: create_image
   examples: |
@@ -139,7 +141,6 @@ nlu:
     - USDT
     - XDAI
     - LINK
-    - FIL
     - PEPE
     - SOL
 
