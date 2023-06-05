@@ -54,6 +54,7 @@ nlu:
     - perfect
     - great
     - amazing
+    - fine
     - feeling like a king
     - wonderful
     - I am feeling very good
@@ -100,12 +101,14 @@ nlu:
     - is possible create an image from text
     - can you create an image
     - can you create an picture
+    - drawing image
 
 - intent: create_image
   examples: |
     - create a image the dog in the moon
     - drawing a image the dog in the city
     - sketch of two persons in the sea
+    - a dog in the sea
     - image of person swimming
     - Create an image of a cat.
     - Create an image of a dog.
