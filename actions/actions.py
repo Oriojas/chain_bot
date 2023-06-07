@@ -8,6 +8,7 @@
 
 # This is a simple example for a custom action which utters "Hello World!"
 import os
+import json
 import openai
 import requests
 from typing import Any, Text, Dict, List
@@ -56,8 +57,10 @@ class ActionCreateImage(Action):
 
         cid = eval(response.text).get("cid")
 
-        dispatcher.utter_message(text=f"{prompt[14:]} image in: /img_create/img_response.jpg")
-        dispatcher.utter_message(text=f"CID: {cid}")
+        # dispatcher.utter_message(text=f"{prompt[14:]} image in: /img_create/img_response.jpg")
+        bot_response = {"original_message": f"{prompt}", "text": f"{cid}", "action": "create_nft"}
+        json_response = json.dumps(bot_response)
+        dispatcher.utter_message(text=str(json_response))
 
         return []
 
